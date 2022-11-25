@@ -1,0 +1,16 @@
+.HeroBanner {
+    padding-top: 2px;
+    width: 100%;
+    min-height: 260px;
+    overflow: hidden;
+    margin-top: 60px;
+    margin-bottom: -60px;
+}
+
+@media (min-width: 600px) {
+    .HeroBanner {
+    margin-top: 72px;
+    margin-bottom: -72px;
+}  
+    }
+    

@@ -1,0 +1,420 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --main-black: black;
+  --main-blue: #003A4E;
+  --snd-blue: #2E88CA;
+  --link-color: #3E70AC;
+  --main-green: #28F59F;
+  --snd-green: #8AE1DF;
+  --main-gold: #FED813;
+  --dark-gray: #444444;
+  --med-gray: #A8A8A8;
+  --reg-gray: #e9e9e9;
+  --light-gray: #F4F4F4;
+  --dark-red: #BB0627;
+  --main-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --bg-size: 3.2rem;
+  --h1-size: 2.4rem;
+  --h2-size: 2.2rem;
+  --h3-size: 2.0rem;
+  --h4-size: 1.8rem;
+  --reg-size: 1.6rem;
+  --sm-size: 1.4rem;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+.Main {
+  z-index: 20;
+  margin: auto;
+  margin-top: 60px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 2rem;
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+h4 {
+  font-size: var(--h4-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--sm-size);
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:active {
+  color: var(--main-blue);
+}
+
+a:hover {
+  text-decoration: underline white;
+}
+
+.Separator {
+    border-bottom: 1px solid var(--med-gray);
+    width: 100%;
+}
+
+.Separator .group, .Separator .cart, .Separator .sidebar {
+    display: none;
+}
+
+.slider {
+  display: flex;
+  overflow: scroll;
+  gap: 5px;
+}
+
+.slick-slide>div {
+  margin: 5px;
+}
+
+.ContentContainer {
+  margin: auto;
+  width: 95%;
+}
+
+.RemoveIcon {
+  cursor: pointer;
+  opacity: 0.5;
+  fill: var(--dark-gray);
+}
+
+.RemoveIcon:hover,
+.RemoveIcon:active {
+  opacity: 0.8;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float:hover {
+  transform: scale(1.05, 1.05);
+  transition: transform 200ms;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+.slick-next:before {
+  display: none;
+}
+
+.slick-prev:before {
+  display: none;
+}
+
+.slick-next {
+  background: url("../assets/slick/nextIco.svg") center center no-repeat !important;
+  background-size: contain !important;
+  margin-right: -26px !important;
+}
+
+.slick-prev {
+  background: url('../assets/slick/beforeIco.svg') center center no-repeat !important;
+  background-size: cover !important;
+  margin-left: -26px !important;
+}
+
+.slick-next,
+.slick-prev {
+  width: 50px !important;
+  height: 50px !important;
+  display: none !important;
+  opacity: 0.4;
+}
+
+.slick-next:hover, .slick-prev:hover {
+  opacity: 1;
+}
+
+.SkeletonContainer {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.SkeletonInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ProductSkeleton {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid var(--reg-gray);
+  border-radius: 12px;
+  gap: 6px;
+}
+
+.ImgSkeleton, .TitleSkeleton, .PriceSkeleton, .ButtonSkeleton {
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 30%, #ececec 33%);
+  border-radius: 5px;
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+  color: transparent;
+  width: 100%;
+}
+
+.ImgSkeleton {
+  max-height: 210px;
+  min-height: 120px;
+  height: 18vw;
+}
+
+.TitleSkeleton {
+  height: 32px;
+}
+
+.PriceSkeleton {
+  height: 17px;
+}
+
+.ButtonSkeleton {
+  height: 46px;
+}
+
+.ImgSkeleton .detailed {
+  min-height: 280px;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 4px !important;
+}
+
+.PriceSkeleton .detailed {
+  height: 64px;
+}
+
+@keyframes shine {
+  to {
+      background-position-x: -200%;
+  }
+}
+
+.contactContent {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.contactTitleContent {
+  border: none !important;
+}
+
+.contactTitleContent a {
+  position: absolute;
+}
+
+.contactTitleContent a {
+  position: absolute;
+}
+
+.contactTitleContent h4 {
+  margin: auto;
+}
+
+.cartContent form {
+  padding-top: 0.5rem;
+  margin: auto;
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.cartContent form section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--med-gray);
+}
+
+.cartContent form section input[type=text],
+.cartContent form section input[type=email] {
+  margin-top: 2px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid var(--med-gray);
+  padding-left: 4px;
+}
+
+.cartContent form section:first-child label,
+.cartContent form section:nth-child(4) label {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartContent form section:nth-child(4) label:last-child {
+  flex-direction: row;
+}
+
+.cartContent form section:nth-child(2) label,
+.cartContent form section:nth-child(3) label,
+.direccionMasTarde {
+  display: flex;
+  gap: 4px;
+}
+
+.cartContent form section:last-child p {
+  text-align: justify;
+  color: var(--dark-gray);
+}
+
+.pickupP {
+  margin-top: -4px;
+  margin-bottom: 4px;
+  text-align: justify;
+  font-size: 13px;
+  color: var(--dark-gray);
+}
+
+.pickupP a {
+  font-size: 13px;
+}
+
+@media (min-width: 600px) {
+  .contactTitleContent {
+    border: none !important;
+    padding-bottom: 0px;
+}
+
+  .Main {
+    width: 100%;
+    margin-top: 72px;
+    max-width: 1100px;
+    padding-top: 3rem;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .ContentContainer {
+    width: 95%;
+    max-width: 1100px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .ProductSkeleton .detailed {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.ProductSkeleton .detailed > .ImgSkeleton{
+    width: 38%;
+}
+
+.ImgSkeleton .detailed {
+    margin-bottom: 0px !important;
+    min-height: 300px;
+}
+
+.SkeletonInfo .detailed {
+    width: 62%;
+}
+
+.TitleSkeleton .detailed {
+    height: 28%;
+}
+
+.PriceSkeleton .detailed {
+    height: 44%;
+}
+
+.ButtonSkeleton .detailed {
+    height: 28%;
+}
+
+@keyframes shine {
+to {
+    background-position-x: -200%;
+}
+}
+
+.addToCartButtonSkeleton {
+height: 44px !important;
+width: 100%;
+border-radius: 6px;
+display: none;
+}
+
+.addToCartButtonSkeleton {
+    display: block;
+}
+
+.skeletonContainer {
+    gap: 0px;
+    padding-bottom: 15px;
+}
+}
+
+
+@media (min-width: 650px) {
+
+  .slick-prev,
+  .slick-next {
+      display: block !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .ContentContainer {
+    margin-top: 72px;
+    max-width: 1100px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
