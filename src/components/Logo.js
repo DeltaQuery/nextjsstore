@@ -5,7 +5,7 @@ import whitelogo from "assets/logos/whitelogo.png"
 import Image from 'next/image'
 import styles from "styles/Header.module.css"
 
-export const Logo = ({ logo = "mainlogo" }) => {
+export const Logo = ({ logo = "mainlogo", footer = false }) => {
 
   const logoImg = (logotype) => {
     if (logotype === "mainlogo") {
@@ -17,7 +17,7 @@ export const Logo = ({ logo = "mainlogo" }) => {
 
   return (
     <Link href="/">
-      <div className={styles.LogoImg}>
+      <div className={footer ? styles.FooterLogoImg : styles.LogoImg}>
         <Image
           src={logoImg(logo)}
           alt="Store logo"

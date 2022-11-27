@@ -13,7 +13,8 @@ const initialState = {
     quantity: 1,
     products: [],
     product: null,
-    loadingProducts: true
+    loadingProducts: true,
+    auth: typeof window !== "undefined" ? localStorage.getItem("nextStore-token") : undefined
 }
 
 const setTotal = (cart) => {
@@ -23,22 +24,6 @@ const setTotal = (cart) => {
     const saves = subtotal - total
     return [total, subtotal, saves]
 }
-
-export const fetchProducts = createAsyncThunk(
-    "data/fetchProducts",
-    async (_, { dispatch }) => {
-        //const response = useProducts()
-        //dispatch(setProducts(response))
-    }
-)
-
-export const findProduct = createAsyncThunk(
-    "data/findProduct",
-    async (id, { dispatch }) => {
-        //const response = useFindProduct(id)
-        //dispatch(setProduct(response))
-    }
-)
 
 export const dataSlice = createSlice({
     name: "data",
@@ -125,6 +110,9 @@ export const dataSlice = createSlice({
         },
         setLoadingProducts: (state, action) => {
             state.loadingProducts = action.payload
+        },
+        setAuth: (state, action) => {
+            state.auth = action.payload
         }
     },
     // Special reducer for hydrating the state. Special case for next-redux-wrapper
@@ -148,6 +136,7 @@ export const { addToCart,
     setProduct,
     getTotal,
     setAddedProduct,
-    setLoadingProducts } = dataSlice.actions
+    setLoadingProducts,
+    setAuth } = dataSlice.actions
 
 export default dataSlice.reducer

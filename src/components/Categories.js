@@ -2,6 +2,7 @@ import React from 'react'
 import { categoriesArr } from 'database/categoriesArr'
 import Link from 'next/link'
 import { CategoriesBox } from 'styles/Categories/CategoriesStyles'
+import Image from 'next/image'
 
 export const Categories = () => {
     return (
@@ -15,7 +16,8 @@ export const Categories = () => {
                     href={`/search/category=${category.categoryId}`}
                     className="categoryImgContainer"
                     >
-                        <img src={category.image} loading="lazy"/>
+                        <Image src={category.image} alt={category.categoryId}
+                        style={{height: "auto", width:"100%"}}/>
                     </Link>
 
                     <Link

@@ -5,7 +5,7 @@ export const PromoDiv = styled.div`
   width: 100%;
   justify-content: space-between;
 
-  img {
+  .PromoImg {
     width: 32%;
     object-fit: cover;
   }

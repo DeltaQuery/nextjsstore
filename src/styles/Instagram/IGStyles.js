@@ -3,11 +3,15 @@ import styled from "styled-components"
 export const InstagramBox = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-gap: 20px;
-  row-gap: 20px;
+  grid-gap: 8px;
+  row-gap: 8px;
   grid-auto-rows: 1fr;
 
-  .igBox > a > img {
+  .IgImage__Link {
+    width: 100%;
+  }
+
+  .IgImage__Img {
     width: 100%;
     height: 100%;
 }
@@ -62,8 +66,8 @@ export const InstagramBox = styled.div`
 
   @media (min-width: 600px) {
     display: grid;
-    grid-gap: 12px;
-    row-gap: 36px;
+    grid-gap: 18px;
+    row-gap: 18px;
     grid-auto-rows: 1fr;
 
     .categoryBox {

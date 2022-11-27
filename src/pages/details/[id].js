@@ -11,11 +11,34 @@ import { SectionTitle } from 'components/Section/SectionTitle'
 import { SliderList } from 'components/SliderList'
 import { productArr } from 'database/productArr'
 import { Layout } from 'layout/Layout/Layout'
-//import { useLocation } from 'react-router-dom'
-//import { useFindProduct } from '../services/useFindProduct'
-//import { useProducts } from '../services/useProducts'
+import { API } from 'services/API'
 
-const Details = () => {
+export async function getStaticPaths() {
+  try {
+    const res = await fetch(`${API}/products`)
+    const data = await res.json()
+    const paths = data.map(({ _id }) => ({params: {id: `${_id}`}}))
+    return {
+      paths,
+      fallback: false
+    }
+  } catch(err){
+    console.log(err)
+  }
+}
+
+export async function getStaticProps({params}) {
+  const res_products = await fetch(`${API}/products`)
+  const res_product = await fetch(`${API}/products/${params.id}`)
+  const data_products = await res_products.json()
+  const data_product = await res_product.json()
+  return {
+    props: { data_products, data_product },
+  }
+}
+
+const Details = ({ data_products, data_product }) => {
+
   const router = useRouter()
   const { id } = router.query
   //const { loading, data } = useFindProduct(id)
@@ -26,13 +49,15 @@ const Details = () => {
   //const location = useLocation()
 
   useEffect(() => {
-    const index = productArr.findIndex(product => product._id === id)
+    //const index = productArr.findIndex(product => product._id === id)
     /*if(!loading && !pLoading && data && pData){
       setProduct(data.findProduct)
       setProducts(pData.allProducts)
     }*/
-    setProduct(productArr[index])
-    setProducts(productArr)
+    setProducts(data_products)
+    setProduct(data_product)
+    //setProduct(productArr[index])
+    //setProducts(productArr)
   }, [/*location.key, loading, pLoading*/id])
 
   return (
@@ -57,6 +82,7 @@ const Details = () => {
             >
               <SliderList
                 category={product.category[0]}
+                data={products}
               >
               </SliderList>
             </Section>

@@ -87,6 +87,12 @@
     width: 44px;
 }
 
+.FooterLogoImg {
+    position: relative;
+    height: 70px;
+    width: 84px;
+}
+
 @media (min-width: 600px) {
     .Nav {
         height: 72px;

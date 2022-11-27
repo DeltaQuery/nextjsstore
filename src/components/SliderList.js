@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react'
 import Slider from "react-slick"
 import { SearchedProducts } from 'styles/Search/SearchStyles'
 //import { useProducts } from '../../services/useProducts'
-import { productArr } from 'database/productArr'
+//import { productArr } from 'database/productArr'
 import { Product } from './Product/Product'
 
-export const SliderList = ({ slides = 4, category }) => {
+export const SliderList = ({ slides = 4, category, data: productArr }) => {
     //const { loading, data } = useProducts()
     const loading = false
 

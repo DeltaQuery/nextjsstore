@@ -8,13 +8,11 @@ import { useSelector } from 'react-redux'
 import roundNumber from 'utils/roundNumber'
 import { ContactForm } from 'styles/Contact/Contact'
 import { Layout } from 'layout/Layout/Layout'
+import { CartTotal } from 'components/Section/CartTotal'
 
 const Contact = () => {
   const cart = useSelector(state => state.data.cart)
   const total = useSelector(state => state.data.total)
-  const right = () => {
-    <></>
-  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -50,7 +48,7 @@ const Contact = () => {
     <Main>
       <Section
         Left={CartTitle}
-        Right={right}
+        Right={CartTotal}
         text={"Datos de Contacto"}
       >
         <CartSection>

@@ -8,10 +8,10 @@ export const PImage = ({image, id, display}) => {
     <ProductImg className={display}>
     { display === "group" ?
     <Link href={`/details/${id}`} className="ImgContainer">
-    <img src={image[0].src} width="90%" className="ProductImg"/>
+    <img src={image[0]?.smallImg[0]} width="90%" className="ProductImg" alt={id}/>
     </Link>
     :
-    <img className="ProductImg" src={image[0].src} width="90%"/>
+    <img className="ProductImg" src={image[0]?.smallImg[0]} width="90%"/>
     }
     </ProductImg>
     

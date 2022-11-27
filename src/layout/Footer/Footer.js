@@ -7,6 +7,7 @@ import { Logo } from 'components/Logo'
 import { FooterDiv } from 'styles/Footer/FooterStyles'
 import { Separator } from 'styles/Separator'
 import Image from 'next/image'
+import styles from "styles/Header.module.css"
 
 export const Footer = () => {
   return (
@@ -15,12 +16,12 @@ export const Footer = () => {
       <div>
         <section className="Footer--storeInfo">
           <Logo 
-          height={["81.45px","81.45px"]}
+          footer
           />
 
           <p>Te damos hardware de alto rendimiento y marca, a precios razonables, para que tengas una mejor experiencia gaming o de trabajo (diseño gráfico, desarrollo web, etc.).</p>
 
-          <p><span>Made in Zulia</span><span><Image src={zuliaheart} className="Footer--zuliaHeart" width="22.33" height="20"></Image></span></p>
+          <p><span>Made in Zulia</span><span><Image src={zuliaheart} className="Footer--zuliaHeart" width="22.33" height="20" alt="Zulia Heart"></Image></span></p>
         </section>
         <section className="Footer--contactInfoTitle">
           <div className="Footer--contactInfoHeading">

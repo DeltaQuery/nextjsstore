@@ -8,13 +8,26 @@ import { Main } from 'styles/View/ViewStyles'
 import { Instagram } from 'components/Instagram'
 import { Categories } from 'components/Categories'
 import { SectionTitle } from 'components/Section/SectionTitle'
+import { Promo } from 'components/Promo'
+import { Banner } from 'components/Banner'
+import { API } from 'services/API'
+import delivery from "assets/banners/delivery.jpg"
+import deal1 from "assets/banners/deal1.jpg"
+import deal2 from "assets/banners/deal2.png"
+import deal3 from "assets/banners/deal3.png"
+import deal4 from "assets/banners/deal4.jpg"
+import deal5 from "assets/banners/deal5.jpg"
+import deal6 from "assets/banners/deal6.jpg"
 
-const API = 'https://api.escuelajs.co/api/v1/products'
+const MoreIG = () => {
+  return <a href="https://www.instagram.com/marateca.ve/?hl=es" target="blank" className="MoreLink">
+    Ver más
+  </a>
+}
 
-export async function getStaticProps(context) {
-  //const res = await fetch('https://api.escuelajs.co/api/v1/products')
-  //const data = await res.json()
-  const data = null
+export async function getStaticProps() {
+  const res = await fetch(`${API}/products`)
+  const data = await res.json()
   return {
     props: { data },
   }
@@ -24,69 +37,75 @@ export default function Home({ data }) {
 
   return (
     <>
-    <HeroBanner/>
-    <Main>    
-      <Section
-        text="¡Ofertas on fire! ⏰"
-        category={50}
+      <HeroBanner />
+      <Main>
+        <Section
+          text="¡Ofertas on fire! ⏰"
+          category={50}
         >
           <SliderList
-          category={50}
+            category={50}
+            data={data}
           />
         </Section>
-        {/*<Promo
+
+        <Promo
           img1={deal4}
           img2={deal5}
           img3={deal6}
-        />*/}
+        />
 
-<Section
-        text="¡Lo mejor en Gaming! 🎮"
-        category={10}
-        >
-        <SliderList
+        <Section
+          text="¡Lo mejor en Gaming! 🎮"
           category={10}
+        >
+          <SliderList
+            category={10}
+            data={data}
           />
         </Section>
 
-        {/*<Promo
+        <Promo
           img1={deal1}
           img2={deal2}
           img3={deal3}
-    />*/}
+        />
 
         <Section
-        text="¡Últimas novedades! 🔥"
-        category={52}
-        >
-        <SliderList
+          text="¡Últimas novedades! 🔥"
           category={52}
-          />
-        </Section>
-
-        {/*<Banner img={delivery} />*/}
-
-        <Section
-        text="¡Más vendidos! 🌟"
-        category={53}
         >
-        <SliderList
+          <SliderList
+            category={52}
+            data={data}
+          />
+        </Section>
+
+        <Banner img={delivery} />
+
+        <Section
+          text="¡Más vendidos! 🌟"
           category={53}
+        >
+          <SliderList
+            category={53}
+            data={data}
           />
         </Section>
 
         <Section
-        Left={SectionTitle}
-        text="Categorías">
-          <Categories/>
+          Left={SectionTitle}
+          text="Categorías">
+          <Categories />
         </Section>
 
         <Section
-        Left={SectionTitle}
-        text="¡Síguenos en Instagram!">
-          <Instagram/>
-    </Section>
-    </Main>
+          Left={SectionTitle}
+          Right={MoreIG}
+          text="¡Síguenos en Instagram!">
+          <Instagram />
+        </Section>
+      </Main>
     </>
   )
 }
