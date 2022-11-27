@@ -8,8 +8,11 @@ import { useRouter } from 'next/router'
 import { Main } from 'styles/View/ViewStyles'
 import { Layout } from 'layout/Layout/Layout'
 import { API } from 'services/API'
+import { SectionMore } from 'components/Section/SectionMore'
 
-
+const Nothing = () => {
+  return <span></span>
+}
 export async function getServerSideProps({params}) {
   const res_products = await fetch(`${API}/products`)
   const data_products = await res_products.json()
@@ -69,6 +72,7 @@ const Search = ({data_products}) => {
     <Main>
       <Section
         Left={SectionBack}
+        Right={ searchedProducts?.length > 0 ? SectionMore : Nothing }
       >
         <div style={{ marginTop: "1rem" }}>
           {(typeOfSearch[2] === false) && <h4><span>Lo sentimos. La búsqueda que tratas de realizar </span> <span style={{ fontWeight: "700" }}>no es posible.</span></h4>}

@@ -48,6 +48,7 @@
     padding-left: 10px;
     padding-right: 38px;
     width: 48vw;
+    color: black;
 }
 
 .SearchIcon {
@@ -61,9 +62,6 @@
     align-items: center;
     position: relative;
     gap: 6px;
-}
-
-.MenuIcon {
 }
 
 .CartQuantity {
