@@ -6,12 +6,10 @@ import { BiX } from 'react-icons/bi'
 import AlertTitle from '@mui/material/Alert'
 import Alert from '@mui/material/Alert'
 
-export default function AdminAlert() {
-  const [open, setOpen] = React.useState(true)
+export default function AdminAlert({open, setOpen}) {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Collapse in={open}>
         <Alert
         severity="info"
           action={
@@ -30,7 +28,6 @@ export default function AdminAlert() {
         >
           If you came by looking at my Github/Linkedin page, this is just a reminder that you can access the Admin Panel by going to /admin/dashboard — <strong>Just login with the default username and password!</strong>
         </Alert>
-      </Collapse>
     </Box>
   )
 }

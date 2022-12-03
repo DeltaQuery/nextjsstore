@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Layout } from 'layout/Layout/Layout'
 import { HeroBanner } from 'components/HeroBanner'
 import { SliderList } from 'components/SliderList'
@@ -33,12 +34,13 @@ export async function getStaticProps() {
 }
 
 export default function Home({ data }) {
-
+  const [open, setOpen] = useState(true)
+  
   return (
     <>
       <HeroBanner />
       <Main>
-        <AdminAlert/>
+        { open && <AdminAlert open={open} setOpen={setOpen}/> }
         <Section
           text="¡Ofertas on fire! ⏰"
           category={50}
