@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html {
   font-size: 62.5%;
 }
@@ -35,7 +31,7 @@ body {
 }
 
 .Main {
-  z-index: 20;
+  
   margin: auto;
   margin-top: 60px;
   width: 95%;

@@ -9,7 +9,6 @@ import { Share } from 'components/Section/Share'
 import { Instagram } from 'components/Instagram'
 import { SectionTitle } from 'components/Section/SectionTitle'
 import { SliderList } from 'components/SliderList'
-import { productArr } from 'database/productArr'
 import { Layout } from 'layout/Layout/Layout'
 import { API } from 'services/API'
 
@@ -41,8 +40,6 @@ const Details = ({ data_products, data_product }) => {
 
   const router = useRouter()
   const { id } = router.query
-  //const { loading, data } = useFindProduct(id)
-  //const { loading: pLoading, data: pData } = useProducts()
   const [product, setProduct] = useState()
   const [products, setProducts] = useState()
   const loading = false

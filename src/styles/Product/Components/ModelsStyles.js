@@ -50,6 +50,7 @@ export const ModelsDiv = styled.div`
     min-width: 100px;
     height: 85px;
     text-align: center;
+    max-width: 120px;
   }
 
   .ModelModel {
@@ -59,6 +60,15 @@ export const ModelsDiv = styled.div`
     align-items: center;
     justify-content: center;
     background-color: var(--light-gray);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    display: block;
+    overflow: hidden;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 13px;
+    width: 100%;
   }
 
   .SelectedModel {

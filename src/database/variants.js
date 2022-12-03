@@ -1,0 +1,1 @@
+export const variants = ["Modelo", "Capacidad", "Frecuencia", "Wattage"]

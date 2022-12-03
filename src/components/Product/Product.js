@@ -48,7 +48,7 @@ export const Product = ({ display, product, loading, products }) => {
                             <PTitle display={display} name={product.name} id={product._id} />
                             <PPrice display={display} price={product.price} discountedPrice={product.discountedPrice} quantity={product.quantity} />
                             <Separator className={display} />
-                            <PModels display={display} id={product._id} models={product.models} model={product.model} products={products} />
+                            <PModels display={display} product={product} products={products}/>
                             <Features display={display} features={product.features} />
                             <div className="Product--Buttons">
                                 <PQuantity display={display} product={product} />

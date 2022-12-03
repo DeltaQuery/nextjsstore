@@ -10,7 +10,7 @@ export const AdNav = styled.div`
   top: 0;
   background: linear-gradient(269.88deg, #009c92 -2.51%, #06304c 51.96%);
   color: white;
-  z-index: 1;
+  z-index: 10 !important;
   padding-left: 1rem;
   padding-right: 1rem;
 

@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Main } from 'styles/View/ViewStyles'
-import { Footer } from 'layout/Footer/Footer'
 import { loginService } from 'services/authService'
 import { useRouter } from 'next/router'
 import { useAuth } from 'hooks/useAuth'
 
+import Button from '@mui/material/Button'
+import CssBaseline from '@mui/material/CssBaseline'
+import TextField from '@mui/material/TextField'
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
+import Container from '@mui/material/Container'
+
+import MuiAlert from 'components/MuiAlert'
+
+const fontSize = 16
+
 const Login = () => {
+    const [alert, setAlert] = useState(false)
+
     const router = useRouter()
     const { auth } = useAuth()
 
@@ -21,6 +33,7 @@ const Login = () => {
         }
         catch (err) {
             console.log(err)
+            setAlert(true)
         }
     }
 
@@ -31,33 +44,67 @@ const Login = () => {
             {auth ?
                 <div>Checking auth state...</div>
                 :
-                <form onSubmit={handleSubmit} className="w-full" style={{ maxWidth: "400px", margin: "auto" }}>
-                    <h1 className="mb-6 text-center">Login</h1>
-                    <div className="mb-6">
-                        <label htmlFor="user" className=" block mb-2 font-medium text-gray-900 dark:text-white">Your username</label>
-                        <input type="text" id="user" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="username" defaultValue="marateca" required />
-                    </div>
-                    <div className="mb-6">
-                        <label htmlFor="password" className="block mb-2 font-medium text-gray-900 dark:text-white">Your password</label>
-                        <input type="password" id="password" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="****" defaultValue={"marateca2022"} required />
-                    </div>
-                    <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full" style={{ width: "100%" }}>Submit</button>
-                </form>
+                <Container component="main" maxWidth="xs">
+                    <CssBaseline />
+                    <Box
+                        sx={{
+                            marginTop: 8,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center'
+                        }}
+                    >
+                        <Typography component="h1" variant="h5" sx={{ mt: 2, fontSize: 20, fontWeight: 600 }}>
+                            INICIO DE SESIÓN
+                        </Typography>
+
+                        <Box component="form" onSubmit={handleSubmit} sx={{ mt: 1 }}>
+
+                            <TextField
+                                margin="normal"
+                                required
+                                fullWidth
+                                id="user"
+                                label="Usuario"
+                                name="user"
+                                autoComplete="user"
+                                autoFocus
+                                defaultValue="marateca"
+                                inputProps={{ style: { fontSize: fontSize } }} // font size of input text
+                                InputLabelProps={{ style: { fontSize: fontSize } }} // font size of input label
+                            />
+
+                            <TextField
+                                margin="normal"
+                                required
+                                fullWidth
+                                name="password"
+                                label="Contraseña"
+                                type="password"
+                                id="password"
+                                autoComplete="current-password"
+                                defaultValue="marateca2022"
+                                inputProps={{ style: { fontSize: fontSize } }} // font size of input text
+                                InputLabelProps={{ style: { fontSize: fontSize } }} // font size of input label
+                            />
+
+                            <Button
+                                type="submit"
+                                fullWidth
+                                variant="contained"
+                                size="large"
+                                sx={{ mt: 2, mb: 3, fontSize: fontSize }}
+                            >
+                                Inicia sesión
+                            </Button>
+                            
+                            <MuiAlert alert={alert} setAlert={ setAlert }/>
+                        </Box> 
+                    </Box>
+                </Container>
             }
-
-
         </Main>
     )
 }
 
 export default Login
-
-Login.getLayout = function getLayout(page) {
-    return (
-        <>
-            {page}
-            <Footer />
-        </>
-    )
-}

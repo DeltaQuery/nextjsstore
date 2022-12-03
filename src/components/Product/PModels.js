@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { ModelsDiv } from 'styles/Product/Components/ModelsStyles'
 import Link from 'next/link'
 
-export const PModels = ({ display, models, model, id, products }) => {
+export const PModels = ({ display, product, products }) => {
+    const { id, model, models } = product
     const [open, setOpen] = useState(true)
     const [pModels, setPmodels] = useState(null)
     const handleOpen = () => {
@@ -20,6 +21,8 @@ export const PModels = ({ display, models, model, id, products }) => {
                             modelsArr.push(result[0])
                         }
                     }
+                    modelsArr.unshift(product)
+                    modelsArr = modelsArr.filter(model => model?.models?.type === product.models?.type)
                 }
             }
             setPmodels(modelsArr)
@@ -29,7 +32,7 @@ export const PModels = ({ display, models, model, id, products }) => {
     return (
         <>
             {
-                (display === "detailed" && pModels && pModels.length) > 0 &&
+                (display === "detailed" && pModels && pModels.length > 1) &&
                 <>
                     <ModelsDiv className={display}>
                         <button
@@ -49,10 +52,10 @@ export const PModels = ({ display, models, model, id, products }) => {
                                     key={model._id}
                                     className=""
                                 >
-                                    <article className={`ModelContent ${id === model._id ? 'SelectedModel' : ''}`}>
-                                        <span className="ModelModel">
+                                    <article className={`ModelContent ${product._id === model._id ? 'SelectedModel' : ''}`}>
+                                        <div className="ModelModel">
                                             {model.model}
-                                        </span>
+                                        </div>
                                         {model.discountedPrice && <span className="ModelPrice">
                                             ${model.discountedPrice}
                                         </span>}
