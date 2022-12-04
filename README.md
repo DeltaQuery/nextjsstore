@@ -23,7 +23,7 @@ Mongo DDBB
 An Express Backend was developed for this project. You can check it here https://github.com/DeltaQuery/ecommerce_backend/
 
 ## Online Version
-You can test the App following this link https://discord-clone-73830.web.app/
+You can test the App following this link https://nextjsstore-marateca.vercel.app/
 
 ## License
 MIT
