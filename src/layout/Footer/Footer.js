@@ -57,7 +57,7 @@ export const Footer = () => {
         <a href="https://github.com/DeltaQuery" target="_blank">Github</a>
         </div>
         <div className="CvFooter--MadeBy">
-        <a href="https://github.com/DeltaQuery/discordClone" target="_blank">Repository</a>
+        <a href="https://github.com/DeltaQuery/nextjsstore" target="_blank">Repository</a>
         </div>
         <div className="CvFooter--Linkedin">
         <a href="https://www.linkedin.com/in/carlos-e-bracho/" target="_blank">Linkedin</a>
