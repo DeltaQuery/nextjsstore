@@ -21,9 +21,9 @@
     "react-icons": "^4.6.0",
     "react-redux": "^8.0.5",
     "react-slick": "^0.29.0",
+    "sass": "^1.56.1",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.3.6"
-  },
-  "devDependencies": {
+    "styled-components": "^5.3.6",
+    "swiper": "^8.4.5"
   }
 }

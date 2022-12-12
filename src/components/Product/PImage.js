@@ -2,18 +2,21 @@ import React from 'react'
 import Link from 'next/link'
 import { ProductImg } from 'styles/Product/Components/PImageStyles'
 
-export const PImage = ({image, id, display}) => {
+export const PImage = ({ images, id, display }) => {
 
   return (
     <ProductImg className={display}>
-    { display === "group" ?
-    <Link href={`/details/${id}`} className="ImgContainer">
-    <img src={image[0]?.smallImg[0]} width="90%" className="ProductImg" alt={id}/>
-    </Link>
-    :
-    <img className="ProductImg" src={image[0]?.smallImg[0]} width="90%"/>
-    }
+      {images[0]?.smallImg && <>
+        {display === "group" ?
+          <Link href={`/details/${id}`} className="ImgContainer">
+            <img src={images[0]?.smallImg} width="90%" className="ProductImg" alt={id} />
+          </Link>
+          :
+          <img className="ProductImg" src={images[0]?.smallImg} width="90%" />
+        }
+      </>
+      }
     </ProductImg>
-    
+
   )
 }

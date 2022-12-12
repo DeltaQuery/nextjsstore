@@ -42,7 +42,7 @@ export const Product = ({ display, product, loading, products }) => {
                 <>
                     <ProductDiv className={display}>
                         <div className="imgContainer">
-                            <PImage display={display} image={product.images} id={product._id} />
+                            <PImage display={display} images={product.images} id={product._id} />
                         </div>
                         <div>
                             <PTitle display={display} name={product.name} id={product._id} />

@@ -1,0 +1,1132 @@
+[
+    {
+    "models": {
+    "type": "Modelo",
+    "variants": [
+    {
+    "model": "4K",
+    "_id": "62ca13ebb1962f59e29d52c3"
+    }
+    ]
+    },
+    "_id": "62ca13ebb1962f59e29d52c2",
+    "name": "Fire TV Stick Lite 2nd Gen",
+    "category": [
+    1,
+    51,
+    53
+    ],
+    "price": 34.99,
+    "discountedPrice": 29.99,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook\nLARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution\nCONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included\nGREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space\nFAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/reacteshop/gh-pages/assets/firesticklite.30d8ea31.webp"
+    ],
+    "_id": "6389668ad51f9db2d9670a92"
+    }
+    ],
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-02T02:44:26.606Z",
+    "model": "Lite HD"
+    },
+    {
+    "models": {
+    "type": "Wattage",
+    "variants": [
+    {
+    "model": "600W Certificada",
+    "_id": "62ca13ebb1962f59e29d52d6"
+    }
+    ]
+    },
+    "_id": "62ca13ebb1962f59e29d52c0",
+    "name": "Fuente de Poder EVGA 600W 80 Plus Bronze",
+    "category": [
+    3,
+    51,
+    53
+    ],
+    "price": 74.99,
+    "discountedPrice": null,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook\n,,LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution\n,,CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included\n,,GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space\n,,FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)\n,\n\n\n\n\n\n\n\n"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/reacteshop/gh-pages/assets/evga600w.dc139757.webp"
+    ],
+    "_id": "638aac3fc3e439853fe4c7b9"
+    }
+    ],
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-03T01:54:07.042Z",
+    "model": "600W Bronce Plus"
+    },
+    {
+    "models": {
+    "type": "Capacidad",
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52c6",
+    "name": "Roku Premiere 4K",
+    "category": [
+    1
+    ],
+    "price": 37.99,
+    "discountedPrice": 34.99,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook\n,LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution\n,CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included\n,GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space\n,FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)\n"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/reacteshop/gh-pages/assets/rokupremiere.f45d28f1.webp"
+    ],
+    "_id": "638927074d46abf4ce8f84de"
+    }
+    ],
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T22:13:26.423Z",
+    "model": "Premiere 4K"
+    },
+    {
+    "models": {
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52ce",
+    "name": "RAM DDR4 Corsair 8GB",
+    "category": [
+    7,
+    52
+    ],
+    "price": 64.99,
+    "discountedPrice": null,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook",
+    "LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution",
+    "CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included",
+    "GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space",
+    "FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)"
+    ],
+    "images": [
+    {
+    "_id": "638c1a588214b50b8aa01fd3",
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/ram/ddr4corsair.webp"
+    ],
+    "largeImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/largeImg/ram/ddr4corsair.webp"
+    ]
+    }
+    ],
+    "model": "8GB 3600 MHz",
+    "boughtWith": [],
+    "stock": 25,
+    "date": null
+    },
+    {
+    "models": {
+    "type": "Modelo",
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52cf",
+    "name": "Nintendo Switch OLED",
+    "category": [
+    10,
+    52
+    ],
+    "price": 419.99,
+    "discountedPrice": null,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook\n,,LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution\n,,CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included\n,,GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space\n,,FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)\n,\n"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/reacteshop/gh-pages/assets/switcholed.4173b7ac.jpg"
+    ],
+    "_id": "63896537762cecb00a4fb20b"
+    }
+    ],
+    "model": "Switch 2019",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-02T02:38:47.515Z"
+    },
+    {
+    "models": {
+    "type": "Capacidad",
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52bf",
+    "name": "Roku Express HD Model 2022",
+    "category": [
+    1,
+    53
+    ],
+    "price": 32.99,
+    "discountedPrice": 29.99,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook\n,LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution\n,CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included\n,GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space\n,FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)\n\n\n\n\n\n\n\n\n\n\n\n"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/reacteshop/gh-pages/assets/rokuexpress.b6d45659.webp"
+    ],
+    "_id": "638aac25c3e439853fe4c709"
+    }
+    ],
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-03T01:53:41.659Z",
+    "model": "Express HD"
+    },
+    {
+    "models": {
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52c8",
+    "name": "Disco SSD Kingston 240GB",
+    "category": [
+    4,
+    52
+    ],
+    "price": 41.99,
+    "discountedPrice": null,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook",
+    "LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution",
+    "CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included",
+    "GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space",
+    "FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)"
+    ],
+    "images": [
+    {
+    "_id": "638c1a588214b50b8aa01fd6",
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/ssd/kingston240gb.webp"
+    ],
+    "largeImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/largeImg/ssd/kingston240gb.webp"
+    ]
+    }
+    ],
+    "model": "240GB",
+    "boughtWith": [],
+    "stock": 25,
+    "date": null
+    },
+    {
+    "models": {
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52ca",
+    "name": "Memoria RAM DDR4 Zeus Laptop",
+    "category": [
+    7,
+    52
+    ],
+    "price": 44.99,
+    "discountedPrice": 40,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook",
+    ",,LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution",
+    ",,CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included",
+    ",,GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space",
+    ",,FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)",
+    ",",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/ram/ddr4laptop.webp"
+    ],
+    "_id": "6389235182ee142a28273ecc"
+    }
+    ],
+    "model": "DDR4 Laptop",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T21:57:37.852Z"
+    },
+    {
+    "models": {
+    "type": "Modelo",
+    "variants": [
+    {
+    "model": "Lite HD",
+    "_id": "62ca13ebb1962f59e29d52c2"
+    }
+    ]
+    },
+    "_id": "62ca13ebb1962f59e29d52c3",
+    "name": "Fire Stick 4K 2022",
+    "category": [
+    1
+    ],
+    "price": 42.99,
+    "discountedPrice": 39.99,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook\n,LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution\n,CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included\n,GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space\n,FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/streaming/firestick4k.webp"
+    ],
+    "_id": "63896360b6a045adf286d687"
+    }
+    ],
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-02T02:30:55.961Z",
+    "model": "4K"
+    },
+    {
+    "models": {
+    "type": "Capacidad",
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52c9",
+    "name": "Disco Portátil Toshiba 1TB",
+    "category": [
+    8
+    ],
+    "price": 63.99,
+    "discountedPrice": 55.99,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook\n,,,,,,,,LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution\n,,,,,,,,CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included\n,,,,,,,,GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space\n,,,,,,,,FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)\n,,,,,,,\n,,,,,,\n,,,,,\n,,,,\n,,,\n,,\n,\n"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/storage/toshiba1tb.webp"
+    ],
+    "_id": "6389271f4d46abf4ce8f8615"
+    }
+    ],
+    "model": "1TB",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T22:13:51.389Z"
+    },
+    {
+    "models": {
+    "type": "Capacidad",
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52c1",
+    "name": "Disco SSD Adata 240GB",
+    "category": [
+    4,
+    51,
+    53
+    ],
+    "price": 32.99,
+    "discountedPrice": 29.99,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook\n,LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution\n,CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included\n,GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space\n,FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)\n"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/ssd/ssdpatriot120gb.webp"
+    ],
+    "_id": "638927364d46abf4ce8f874c"
+    }
+    ],
+    "model": "240GB",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T22:14:14.416Z"
+    },
+    {
+    "models": {
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52d1",
+    "name": "Xbox Series S",
+    "category": [
+    10,
+    50,
+    51,
+    52
+    ],
+    "price": 439.99,
+    "discountedPrice": 379.99,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook",
+    ",LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution",
+    ",CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included",
+    ",GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space",
+    ",FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/gaming/xboxs.webp"
+    ],
+    "_id": "6389239782ee142a2827426b"
+    }
+    ],
+    "model": "Series S",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T21:58:47.025Z"
+    },
+    {
+    "models": {
+    "type": "Capacidad",
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52c5",
+    "name": "Disco SSD Adata 480GB",
+    "category": [
+    4
+    ],
+    "price": 59.99,
+    "discountedPrice": 54.99,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook\n,LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution\n,CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included\n,GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space\n,FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)\n"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/ssd/ssdpatriot120gb.webp"
+    ],
+    "_id": "638927464d46abf4ce8f87fb"
+    }
+    ],
+    "model": "480GB",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T22:14:30.252Z"
+    },
+    {
+    "models": {
+    "type": "Capacidad",
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52cb",
+    "name": "Disco Portátil Toshiba 2TB",
+    "category": [
+    8,
+    51,
+    53
+    ],
+    "price": 74.99,
+    "discountedPrice": null,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook\n,LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution\n,CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included\n,GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space\n,FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)\n"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/storage/toshiba2tb.webp"
+    ],
+    "_id": "638927534d46abf4ce8f88aa"
+    }
+    ],
+    "model": "2TB",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T22:14:42.630Z"
+    },
+    {
+    "models": {
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52d5",
+    "name": "Mouse Razer DeathAdder",
+    "category": [
+    9,
+    10,
+    51
+    ],
+    "price": 29.99,
+    "discountedPrice": null,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook",
+    ",LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution",
+    ",CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included",
+    ",GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space",
+    ",FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/mouse/razerdeathadder.webp"
+    ],
+    "_id": "638923ad82ee142a282743a0"
+    }
+    ],
+    "model": "DeathAdder Essential",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T21:59:09.040Z"
+    },
+    {
+    "models": {
+    "type": "Capacidad",
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52cc",
+    "name": "Disco Portátil Toshiba 4TB",
+    "category": [
+    8
+    ],
+    "price": 119.99,
+    "discountedPrice": null,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook\n,LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution\n,CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included\n,GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space\n,FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)\n"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/storage/toshiba4tb.webp"
+    ],
+    "_id": "6389275e4d46abf4ce8f8959"
+    }
+    ],
+    "model": "4TB",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T22:14:53.954Z"
+    },
+    {
+    "models": {
+    "type": "Wattage",
+    "variants": [
+    {
+    "model": "600W Bronce Plus",
+    "_id": "62ca13ebb1962f59e29d52c0"
+    }
+    ]
+    },
+    "_id": "62ca13ebb1962f59e29d52d6",
+    "name": "Fuente de Poder Thermaltake 80 Plus",
+    "category": [
+    3,
+    51,
+    53
+    ],
+    "price": 64.99,
+    "discountedPrice": null,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook\n,,LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution\n,,CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included\n,,GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space\n,,FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)\n,\n"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/powersupply/thermaltake600w.webp"
+    ],
+    "_id": "638966a6d51f9db2d9670bf5"
+    }
+    ],
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-02T02:44:54.122Z",
+    "model": "600W Certificada"
+    },
+    {
+    "models": {
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52d3",
+    "name": "Audífonos Skullcandy True Dime",
+    "category": [
+    10,
+    50,
+    51,
+    52
+    ],
+    "price": 29.99,
+    "discountedPrice": 24.99,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook",
+    ",LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution",
+    ",CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included",
+    ",GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space",
+    ",FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/accesories/skullcandy.webp"
+    ],
+    "_id": "6389237b82ee142a28274136"
+    }
+    ],
+    "model": "True Dime",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T21:58:19.686Z"
+    },
+    {
+    "models": {
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52d0",
+    "name": "Mouse Steelseries Rival 3",
+    "category": [
+    9,
+    10,
+    51
+    ],
+    "price": 29.99,
+    "discountedPrice": null,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook",
+    ",LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution",
+    ",CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included",
+    ",GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space",
+    ",FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/mouse/steelseries.webp"
+    ],
+    "_id": "638923c282ee142a2827444d"
+    }
+    ],
+    "model": "Rival 3",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T21:59:30.772Z"
+    },
+    {
+    "models": {
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52c4",
+    "name": "Tablet Fire 7 Kids Forro Azul",
+    "category": [
+    11
+    ],
+    "price": 74.99,
+    "discountedPrice": 70.99,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook",
+    ",LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution",
+    ",CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included",
+    ",GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space",
+    ",FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/tablet/fire7kids.webp"
+    ],
+    "_id": "638923d182ee142a282744fa"
+    }
+    ],
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T21:59:45.878Z",
+    "model": "Fire 7 Kids"
+    },
+    {
+    "models": {
+    "type": "Capacidad",
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52c7",
+    "name": "Disco SSD Adata 120GB",
+    "category": [
+    4
+    ],
+    "price": 24.99,
+    "discountedPrice": null,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook\n,LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution\n,CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included\n,GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space\n,FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)\n"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/ssd/ssdpatriot120gb.webp"
+    ],
+    "_id": "638927704d46abf4ce8f8a08"
+    }
+    ],
+    "model": "120GB",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T22:15:11.981Z"
+    },
+    {
+    "models": {
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52cd",
+    "name": "RAM DDR4 Corsair 8GB X2 3600 MHz",
+    "category": [
+    7,
+    52
+    ],
+    "price": 84.99,
+    "discountedPrice": null,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook",
+    ",LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution",
+    ",CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included",
+    ",GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space",
+    ",FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/ram/ddr4rgb.webp"
+    ],
+    "_id": "638923e382ee142a2827462f"
+    }
+    ],
+    "model": "DDR4 RGB",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T22:00:03.636Z"
+    },
+    {
+    "models": {
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52d8",
+    "name": "Disco SSD Western Digital 1TB",
+    "category": [
+    4
+    ],
+    "price": 109.99,
+    "discountedPrice": 104.99,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook",
+    ",LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution",
+    ",CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included",
+    ",GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space",
+    ",FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/ssd/ssdwd1tb.webp"
+    ],
+    "_id": "638923f082ee142a282746dc"
+    }
+    ],
+    "model": "1TB",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T22:00:16.803Z"
+    },
+    {
+    "models": {
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52d2",
+    "name": "Pasta térmica Arctic MX-5",
+    "category": [
+    10,
+    50,
+    51,
+    52
+    ],
+    "price": 19.99,
+    "discountedPrice": 14.99,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook",
+    ",LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution",
+    ",CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included",
+    ",GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space",
+    ",FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/accesories/arcticmx5.webp"
+    ],
+    "_id": "6389240082ee142a28274789"
+    }
+    ],
+    "model": "mx-5",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T22:00:32.708Z"
+    },
+    {
+    "models": {
+    "variants": []
+    },
+    "_id": "62ca13ebb1962f59e29d52d4",
+    "name": "Mouse Gaming Redragon M601",
+    "category": [
+    9,
+    10,
+    51
+    ],
+    "price": 29.99,
+    "discountedPrice": null,
+    "discountedPriceWith": null,
+    "discountWith": null,
+    "features": [
+    "WORK AND PLAY: Browse the Internet, write documents, play games, work, and more with this Dell Chromebook",
+    ",LARGE, HD DISPLAY: Large, 11. 6-inch screen with HD display quality and 1366 x 768 resolution",
+    ",CONNECT TO ADDITIONAL SCREENS AND DEVICES: Features HDMI port, 2 USB ports, SD card reader, and aux jack; charging cord included",
+    ",GREAT FOR MULTITASKING: 2GB Ram memory and 16GB storage space",
+    ",FAST AND POWERFUL: Runs on Intel Celeron N3060 dual-core CPU and Chrome operating system (OS)",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://raw.githubusercontent.com/DeltaQuery/ecommerce.github.io/main/src/assets/productsImages/smallImg/mouse/redragonm601.webp"
+    ],
+    "_id": "6389240a82ee142a28274836"
+    }
+    ],
+    "model": "M601",
+    "boughtWith": [],
+    "stock": 25,
+    "date": "2022-12-01T22:00:42.858Z"
+    },
+    {
+    "models": {
+    "type": "",
+    "variants": []
+    },
+    "_id": "63869490a05fc7ca2adb1ef5",
+    "name": "Laptop Gateway Ryzen 3700U",
+    "category": [
+    2,
+    51
+    ],
+    "price": 500,
+    "discountedPrice": 440,
+    "features": [
+    "Pantalla 15.6\"",
+    ",Procesador AMD Ryzen 7 3700U",
+    ",256GB SSD Almacenamiento",
+    ",16GB RAM",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://res.cloudinary.com/dtspqmqjk/image/upload/v1669764238/naxbaouhzbvdegpnr75j.png"
+    ],
+    "_id": "6389241782ee142a282748e3"
+    }
+    ],
+    "model": "GF63",
+    "date": "2022-12-01T22:00:55.844Z",
+    "__v": 0
+    },
+    {
+    "models": {
+    "type": "",
+    "variants": []
+    },
+    "_id": "63869850a05fc7ca2adb1ef8",
+    "name": "Procesador Intel i3 10100F",
+    "category": [
+    5,
+    10
+    ],
+    "price": 120,
+    "discountedPrice": 110,
+    "features": [
+    "4 núcleos",
+    ",8 hilos",
+    ",3.9 GHz",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://res.cloudinary.com/dtspqmqjk/image/upload/v1669765198/vkwfqzi2arhcjxfdkmpv.png"
+    ],
+    "_id": "6389242c82ee142a28274990"
+    }
+    ],
+    "model": "i3 10100f",
+    "date": "2022-12-01T22:01:16.945Z",
+    "__v": 0
+    },
+    {
+    "models": {
+    "type": "",
+    "variants": []
+    },
+    "_id": "63869927a05fc7ca2adb1efb",
+    "name": "Fan Cooler",
+    "category": [
+    10,
+    11
+    ],
+    "price": 60,
+    "discountedPrice": null,
+    "features": [
+    "Fan Cooler",
+    ",Socket Intel",
+    ",Socket AMD",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://res.cloudinary.com/dtspqmqjk/image/upload/v1669765413/yq9c56h677hfwzznoove.png"
+    ],
+    "_id": "6389243d82ee142a28274a3d"
+    }
+    ],
+    "model": "V5 RGB",
+    "date": "2022-12-01T22:01:33.348Z",
+    "__v": 0
+    },
+    {
+    "models": {
+    "type": "",
+    "variants": []
+    },
+    "_id": "63869990a05fc7ca2adb1f01",
+    "name": "RAM Team Group 16GB",
+    "category": [
+    10,
+    7
+    ],
+    "price": 80,
+    "discountedPrice": 75,
+    "features": [
+    "8GB X 2",
+    ",3600MHZ",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://res.cloudinary.com/dtspqmqjk/image/upload/v1669765519/amr7sd2itpqhdkt25lws.jpg"
+    ],
+    "_id": "6389244882ee142a28274aea"
+    }
+    ],
+    "model": "Oloy",
+    "date": "2022-12-01T22:01:44.004Z",
+    "__v": 0
+    },
+    {
+    "models": {
+    "type": "",
+    "variants": []
+    },
+    "_id": "6387f43259e6aa5af7d3bcca",
+    "name": "Mouse Gaming Razer Viper",
+    "category": [
+    9,
+    10,
+    11
+    ],
+    "price": 30,
+    "discountedPrice": 20,
+    "features": [
+    "Mouse Gaming",
+    ",Razer",
+    ",9mil DPI",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://res.cloudinary.com/dtspqmqjk/image/upload/v1669854258/hvm2qnxp9g3nxub3dct3.jpg"
+    ],
+    "_id": "6389245782ee142a28274b97"
+    }
+    ],
+    "model": "Viper",
+    "date": "2022-12-01T22:01:59.666Z",
+    "__v": 0
+    },
+    {
+    "models": {
+    "type": "Modelo",
+    "variants": []
+    },
+    "_id": "6387f48159e6aa5af7d3bd0b",
+    "name": "Mouse Gaming Redragon M602",
+    "category": [
+    9,
+    10,
+    11
+    ],
+    "price": 30,
+    "discountedPrice": 20,
+    "features": [
+    "Mouse Gaming\nRedragon\n9mil DPI\n\n\n\n\n\n\n\n\n\n\n\n"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://res.cloudinary.com/dtspqmqjk/image/upload/v1669854337/f7qsyqfjoasp4akby2g3.png"
+    ],
+    "_id": "638964755b4ff89fdad97156"
+    }
+    ],
+    "model": "M602",
+    "date": "2022-12-02T02:35:33.756Z",
+    "__v": 0
+    },
+    {
+    "models": {
+    "type": "",
+    "variants": []
+    },
+    "_id": "6388040959e6aa5af7d3d41d",
+    "name": "Fan Cooler Pack 3 RGB",
+    "category": [
+    10
+    ],
+    "price": 35,
+    "discountedPrice": 25,
+    "features": [
+    "Fan Cooler RGB",
+    ",,Pack de 3",
+    ",",
+    ""
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://res.cloudinary.com/dtspqmqjk/image/upload/v1669858498/nv5mqqcaump8cxoreggv.png"
+    ],
+    "_id": "6389247182ee142a28274cf1"
+    }
+    ],
+    "model": "V5 V2",
+    "date": "2022-12-01T22:02:25.458Z",
+    "__v": 0
+    },
+    {
+    "models": {
+    "type": "",
+    "variants": []
+    },
+    "_id": "638aa773c3e439853fe4bd5f",
+    "name": "Combo Gaming i3 10100F + Placa",
+    "category": [
+    5,
+    6,
+    10
+    ],
+    "price": 230,
+    "discountedPrice": 200,
+    "features": [
+    "Procesador i3 10100F",
+    "Placa Asus H410M-A"
+    ],
+    "images": [
+    {
+    "largeImg": [],
+    "smallImg": [
+    "https://res.cloudinary.com/dtspqmqjk/image/upload/v1670031217/ye6fvmpptcfkx9rnfat8.png"
+    ],
+    "_id": "638aa773c3e439853fe4bd60"
+    }
+    ],
+    "model": "Combo",
+    "date": "2022-12-03T01:33:37.406Z",
+    "__v": 0
+    }
+    ]

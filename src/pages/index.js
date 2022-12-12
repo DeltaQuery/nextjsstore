@@ -18,6 +18,7 @@ import deal4 from "assets/banners/deal4.jpg"
 import deal5 from "assets/banners/deal5.jpg"
 import deal6 from "assets/banners/deal6.jpg"
 import AdminAlert from 'components/AdminAlert'
+import "swiper/css/bundle"
 
 const MoreIG = () => {
   return <a href="https://www.instagram.com/marateca.ve/?hl=es" target="blank" className="MoreLink">

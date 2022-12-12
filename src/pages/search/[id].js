@@ -144,5 +144,3 @@ const a1 = [ { id: 1 }, { id: 2 }, { id: 3 } ]
 const a2 = [ { id: 1 }, { id: 2 } ]
 
 const result = a1.filter(({id}) => !a2.some(x => x.id == id))
-
-console.log(result)

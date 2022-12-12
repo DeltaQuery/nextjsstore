@@ -97,9 +97,9 @@ export default function ProductsTable({children}) {
                     <Table stickyHeader aria-label="sticky table">
                         <TableHead>
                             <TableRow>
-                                {columns.map((column) => (
+                                {columns.map((column, index) => (
                                     <TableCell
-                                        key={column.id}
+                                        key={index}
                                         align={column.align}
                                         style={{ minWidth: column.minWidth, fontSize: fontSize }}
                                     >
@@ -116,9 +116,9 @@ export default function ProductsTable({children}) {
                         <TableBody>
                             {filtered_arr && filtered_arr
                                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                                .map((row) => {
+                                .map((row, index) => {
                                     return (
-                                        <TableRow hover role="checkbox" tabIndex={-1} key={row._id}>
+                                        <TableRow hover role="checkbox" tabIndex={-1} key={index}>
                                             {columns.map((column, index) => {
                                                 const value = row[column.id]
                                                 return (
@@ -179,10 +179,10 @@ function getCategory(category) {
 
 const handleValue = (format, value, column, index) => {
     if (column.id === "image") {
-        if (typeof value[0] === "string" && value[0].includes("http")) {
-            return <img key={index} src={value[0]} alt="Img" height="45px"></img>
+        if (typeof value === "string" && value.includes("http")) {
+            return <img key={index} src={value} alt="Img" height="45px"></img>
         } else {
-            return value[0]
+            return value
         }
     }
     if (format && typeof value === "number") {

@@ -16,7 +16,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log("entrando")
     let cartInfo = cart.map((product) => {
       return `%0AProducto%3A%20${product.name}%20%0ACantidad%3A%20${product.quantity}%20%0APrecio%3A%20$${product.price}%20%0A---`
     })
