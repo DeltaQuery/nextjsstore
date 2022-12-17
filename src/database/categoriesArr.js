@@ -7,6 +7,9 @@ import motherboards from "assets/categories/motherboards.png"
 import processors from "assets/categories/procesadores.png"
 import ram from "assets/categories/RAM.webp"
 import storage from "assets/categories/almacenamiento.png"
+import graphic_card from "assets/categories/graphic_card.png"
+import gaming_case from "assets/categories/case.png"
+import mobo from "assets/categories/mobo.png"
 /*import razerMouse from "../assets/productsImages/mouse/razerdeathadder.jpg"
 import switchOled from "../assets/productsImages/gaming/switcholed.jpg"
 import { FaPenNib } from "react-icons/fa"*/
@@ -45,7 +48,7 @@ export const categoriesArr = [
     {
         category: "Placas madre",
         categoryId: 6,
-        image: motherboards,
+        image: mobo,
         combo: true
     },
     {
@@ -58,7 +61,7 @@ export const categoriesArr = [
         category: "Almacenamiento",
         categoryId: 8,
         image: storage,
-        combo: true
+        combo: false
     },
     {
         category: "Mouse",
@@ -81,19 +84,19 @@ export const categoriesArr = [
     {
         category: "Fan Cooling",
         categoryId: 12,
-        image: null,
+        image: fancooler,
         combo: true
     },
     {
         category: "Case",
         categoryId: 13,
-        image: null,
+        image: gaming_case,
         combo: true
     },
     {
         category: "Tarjeta Gráfica",
         categoryId: 14,
-        image: null,
+        image: graphic_card,
         combo: true
     },
     {

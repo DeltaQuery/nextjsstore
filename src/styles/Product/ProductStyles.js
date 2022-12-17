@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const ProductDiv = styled.div`
-
   display: flex;
   min-width: 160px;
   padding: 10px;
@@ -23,7 +22,7 @@ export const ProductDiv = styled.div`
     max-width: 130px;
   }
 
-  .imgContainer a {
+  .imgContainer a, .imgContainer div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,12 +70,21 @@ export const ProductDiv = styled.div`
   &.detailed .RemoveIcon, &.sidebar .RemoveIcon, &.group .RemoveIcon {
     display: none;
   }
+
+  &.combo_list {
+    max-width: 160px;
+  }
   
   @media (min-width: 600px) {
     width: 100%;
     margin: auto;
     padding: 15px;
     gap: 2rem;
+
+    &.combo_list {
+      min-width: 180px;
+      margin: 0;
+    }
 
     &.group > div:nth-child(2){
       gap: 6px;
@@ -104,4 +112,5 @@ export const ProductDiv = styled.div`
       gap: 2rem;
     }
   }
-`;
+    `;
+

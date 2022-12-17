@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useSwiper } from 'hooks/useSwiper'
 import { Separator } from 'styles/Separator'
 import { ProductSkeleton } from './ProductSkeleton'
@@ -19,12 +19,12 @@ export const Product = ({ display, product, loading, products }) => {
     const dispatch = useDispatch()
 
     const handleClick = () => {
-        if (display === "group") {
+        if (display.includes("group")) {
             dispatch(addToCart([product, 1]))
             dispatch(setAddedProduct(product))
             handleSidecart(true)
         }
-        if (display === "detailed") {
+        if (display.includes("detailed")) {
             dispatch(addToCart([product, undefined]))
             dispatch(setAddedProduct(product))
             handleSidecart(true)
@@ -57,7 +57,7 @@ export const Product = ({ display, product, loading, products }) => {
                         </div>
                         <Remove id={product._id} />
                     </ProductDiv>
-                    {display === "cart" && <Separator />}
+                    {display.includes("cart") && <Separator />}
                 </>
             }
         </>

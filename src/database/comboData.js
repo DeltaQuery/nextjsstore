@@ -78,10 +78,12 @@ export const processorData = (e) => {
       model: e.target.processor_model.value,
       cores: e.target.processor_cores.value,
       threads: e.target.processor_threads.value,
+      socket: e.target.processor_socket.value,
       base_ghz: e.target.processor_base_ghz.value,
       turbo_ghz: e.target.processor_turbo_ghz.value,
       mhz: e.target.processor_mhz.value,
       fan: e.target.processor_fan.value,
+      graphics: e.target.processor_graphics.value
     },
   }
 }

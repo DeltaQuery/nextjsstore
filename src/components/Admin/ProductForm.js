@@ -16,6 +16,7 @@ import { PowerSupplyInputs } from "./Combo/PowerSupplyInputs"
 import { caseData, coolerData, graphicData, moboData, powerData, processorData, ramData, storageData } from "database/comboData"
 import { BiX } from "react-icons/bi"
 import { useRouter } from "next/router"
+import Spinner from "./Spinner"
 
 const fontSize = 16
 
@@ -35,6 +36,7 @@ export const ProductForm = ({ products, newProductForm = true, product }) => {
     const [category, setCategory] = useState([])
     const [associated, setAssociated] = useState([])
     const [modelType, setModelType] = useState("")
+    const [comboItem, setComboItem] = useState(false)
     const [alert, setAlert] = useState(false)
     const [errAlert, setErrAlert] = useState(false)
     const [img, setImg] = useState()
@@ -45,6 +47,7 @@ export const ProductForm = ({ products, newProductForm = true, product }) => {
 
     useEffect(() => {
         if (product) {
+            //console.log(product)
             setName(product.name)
             setPrice(product.price)
             setDiscountedPrice(product.discountedPrice)
@@ -58,6 +61,7 @@ export const ProductForm = ({ products, newProductForm = true, product }) => {
                 :
                 []
             )
+            setComboItem(product.combo_item)
             //define combo_data fields
             if (product?.combo_data && Object.keys(product?.combo_data).length > 0) {
                 const categories = categoriesArr.filter(cat => cat.combo)
@@ -66,7 +70,7 @@ export const ProductForm = ({ products, newProductForm = true, product }) => {
                 })
                 const categoryId = categories.find(item => item.categoryId === filteredCategory[0])
 
-                if(categoryId){
+                if (categoryId) {
                     if (categoryId.categoryId === 5) {
                         //processor
                     }
@@ -103,18 +107,18 @@ export const ProductForm = ({ products, newProductForm = true, product }) => {
         const categoryId = categories.find(item => item.categoryId === filteredCategory[0])
 
         if (categoryId) {
-            if (categoryId.categoryId === 5) setComboInputs([<ProcessorInputs product={product}/>, processorData])
-            if (categoryId.categoryId === 6) setComboInputs([<MotherboardInputs product={product}/>, moboData])
-            if (categoryId.categoryId === 7) setComboInputs([<RamInputs product={product}/>, ramData])
-            if (categoryId.categoryId === 4 || categoryId.name === 8) setComboInputs([<StorageInputs product={product} />, storageData])
-            if (categoryId.categoryId === 13) setComboInputs([<CaseInputs product={product} />, caseData])
-            if (categoryId.categoryId === 12) setComboInputs([<CoolerInputs product={product}/>, coolerData])
-            if (categoryId.categoryId === 14) setComboInputs([<GraphicInputs product={product}/>, graphicData])
-            if (categoryId.categoryId === 3) setComboInputs([<PowerSupplyInputs product={product} />, powerData])
+            if (categoryId.categoryId === 5) setComboInputs([<ProcessorInputs product={product} validate={comboItem}/>, processorData])
+            if (categoryId.categoryId === 6) setComboInputs([<MotherboardInputs product={product} validate={comboItem}/>, moboData])
+            if (categoryId.categoryId === 7) setComboInputs([<RamInputs product={product} validate={comboItem}/>, ramData])
+            if (categoryId.categoryId === 4 || categoryId.name === 8) setComboInputs([<StorageInputs product={product} validate={comboItem}/>, storageData])
+            if (categoryId.categoryId === 13) setComboInputs([<CaseInputs product={product} validate={comboItem}/>, caseData])
+            if (categoryId.categoryId === 12) setComboInputs([<CoolerInputs product={product} validate={comboItem}/>, coolerData])
+            if (categoryId.categoryId === 14) setComboInputs([<GraphicInputs product={product} validate={comboItem}/>, graphicData])
+            if (categoryId.categoryId === 3) setComboInputs([<PowerSupplyInputs product={product} validate={comboItem}/>, powerData])
         } else {
             setComboInputs(undefined, undefined)
         }
-    }, [category])
+    }, [category, comboItem])
 
     const handleComboInputs = (e) => {
         const categories = categoriesArr.filter(cat => cat.combo)
@@ -159,16 +163,17 @@ export const ProductForm = ({ products, newProductForm = true, product }) => {
                     undefined
             },
             date: new Date(),
+            combo_item: comboItem,
             combo_data: handleComboInputs(e)
         }
 
-        //console.log(e.target.power_certification.value)
+        //console.log(productForm)
 
         const img = e.target.image.files[0]
         const imgData = new FormData()
         imgData.append("file", img)
 
-        
+
         try {
             if (img) {
                 const imgData = new FormData()
@@ -208,11 +213,12 @@ export const ProductForm = ({ products, newProductForm = true, product }) => {
             setAlert(false)
             setErrAlert(true)
         }
-        
+
     }
 
     return (
-        <Container component="main" maxWidth="xs" sx={{ mt: -7 }}>
+        <Container component="main" maxWidth="xs" sx={{ mt: -7, position: "relative" }}>
+            {/*<Spinner/>*/}
             <CssBaseline />
             <Box
                 sx={{
@@ -328,6 +334,26 @@ export const ProductForm = ({ products, newProductForm = true, product }) => {
                                     {product.name}
                                 </MenuItem>
                             ))}
+                        </Select>
+                    </div>
+
+                    <div>
+                        <InputLabel>Item para PC Builder</InputLabel>
+                        <Select id="comboItem" name="comboItem" required fullWidth value={comboItem}
+                            onChange={(e) => setComboItem(e.target.value)}
+                        >
+                            <MenuItem
+                                value={false}
+                                sx={{ fontSize: fontSize }}
+                            >
+                                No
+                            </MenuItem>
+                            <MenuItem
+                                value={true}
+                                sx={{ fontSize: fontSize }}
+                            >
+                                Sí
+                            </MenuItem>
                         </Select>
                     </div>
 

@@ -5,7 +5,10 @@ import { SearchedProducts } from 'styles/Search/SearchStyles'
 //import { productArr } from 'database/productArr'
 import { Product } from './Product/Product'
 
-export const SliderList = ({ slides = 4, category, data: productArr }) => {
+export const SliderList = ({ combo, slides = 4, category, data: productArr, slidesSetting = {
+    slidesToShow: slides - 1,
+    slidesToScroll: slides - 1
+} }) => {
     //const { loading, data } = useProducts()
     const loading = false
 
@@ -22,10 +25,7 @@ export const SliderList = ({ slides = 4, category, data: productArr }) => {
         responsive: [
             {
                 breakpoint: 900,
-                settings: {
-                    slidesToShow: slides - 1,
-                    slidesToScroll: slides - 1
-                }
+                settings: slidesSetting
             },
             {
                 breakpoint: 650,
@@ -39,23 +39,17 @@ export const SliderList = ({ slides = 4, category, data: productArr }) => {
     useEffect(() => {
         if (/*!loading && data*/ productArr) {
             if (!category) {
-                //setProducts(data?.allProducts)
                 setProducts(productArr)
             } else {
                 if (category === 50 || category[0] === 50) {
-                    //setProducts(data.allProducts?.filter(x => x.discountedPrice))
                     setProducts(productArr.filter(x => x.discountedPrice))
                 } else {
                     if (typeof category === "number") {
                         let cat = []
                         cat.push(category)
-                        //setProducts(data.allProducts?.filter(x => x.category.some(e => e === cat)))
-                        //setProducts(data.allProducts?.filter(x => x.category.some(z => cat.includes(z))))
                         setProducts(productArr.filter(x => x.category.some(e => e === cat)))
                         setProducts(productArr.filter(x => x.category.some(z => cat.includes(z))))
                     } else {
-                        //setProducts(data.allProducts?.filter(x => x.category.some(e => e === category)))
-                        //setProducts(data.allProducts?.filter(x => x.category.some(z => category.includes(z))))
                         setProducts(productArr.filter(x => x.category.some(e => e === category)))
                         setProducts(productArr.filter(x => x.category.some(z => category.includes(z))))
                     }
@@ -79,16 +73,16 @@ export const SliderList = ({ slides = 4, category, data: productArr }) => {
                 (!loading && products?.length >= slides) &&
                 <Slider {...settings} id="productSlider">
                     {products && products.map((product, index) => {
-                        return <Product loading={loading} key={index} display="group" product={product} />
+                        return <Product loading={loading} key={index} display={`group ${combo}`} product={product} />
                     })
                     }
                 </Slider>
             } 
 
             {(!loading && products?.length < slides) &&
-                <SearchedProducts style={{ marginTop: "0rem" }}>
+                <SearchedProducts style={{ marginTop: "5px" }}>
                     {products && products.map((product, index) => {
-                        return <Product loading={loading} key={index} product={product} display="group" />
+                        return <Product loading={loading} key={index} product={product} display={`group ${combo}`} />
                     })
                     }
                 </SearchedProducts>

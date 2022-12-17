@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { FeaturesDiv } from 'styles/Product/Components/Features'
 
-export const Features = ({ display, features: featureList }) => {
-    const [features, setFeatures] = useState(true)
+export const Features = ({ display, features: featureList, open = true }) => {
+    const [features, setFeatures] = useState(open)
     const handleFeatures = () => {
         setFeatures(!features)
     }

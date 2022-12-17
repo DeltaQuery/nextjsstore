@@ -6,7 +6,6 @@ import { Product } from 'components/Product/Product'
 import { Section } from 'components/Section/Section'
 import { AddToCart } from 'components/Product/AddToCart'
 import { Remove } from 'components/Product/Remove'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 const Cart = () => {

@@ -42,6 +42,21 @@ height: 18vw;
             max-height: 80%;
         }
     }
+
+    &.combo_list {
+        min-height: 100px;
+        max-height: 125px;
+    }
+
+    &.combo_list .ProductImg {
+        max-width: 95%;
+        max-height: 95%;
+        object-fit: contain;
+    }
+
+    &.group {
+        margin-bottom: -10px;
+        margin-top: -8px;
+    }
 }
 `;
-    

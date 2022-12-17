@@ -9,7 +9,7 @@ export const PPrice = ({ display, price, discountedPrice, quantity }) => {
         discountedPrice &&
         <div className="dealPrice">
           <span>-25%</span>
-          {display === "cart"
+          {display.includes("cart")
             ?
             <span>${roundNumber(discountedPrice*quantity)}</span>
             :
@@ -23,7 +23,7 @@ export const PPrice = ({ display, price, discountedPrice, quantity }) => {
           discountedPrice &&
           <span>Precio regular:</span>
         }
-        {display === "cart"
+        {display.includes("cart")
             ?
             <div>${roundNumber(price*quantity)}</div>
             :

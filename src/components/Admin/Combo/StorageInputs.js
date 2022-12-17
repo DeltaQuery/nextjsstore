@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Select, TextField, Typography, MenuItem, Box, InputLabel } from '@mui/material'
 
-export const StorageInputs = ({ product }) => {
+export const StorageInputs = ({ product, validate }) => {
     const [storageInterface, setStorageInterface] = useState("")
     const [storageCapacity, setStorageCapacity] = useState("")
 
@@ -19,19 +19,18 @@ export const StorageInputs = ({ product }) => {
             gap: 1.5
         }}>
             <Typography component="h4" variant="h5">Datos Técnicos del Disco de Almacenamiento</Typography>
-            <TextField id="storage_brand" fullWidth placeholder="Marca de Disco" label="Marca" defaultValue={product?.combo_data?.storage?.brand} />
-            <TextField id="storage_model" fullWidth placeholder="Modelo de Disco" label="Modelo" defaultValue={product?.combo_data?.storage?.model} />
+            <TextField disabled={!validate} required={validate}  id="storage_brand" fullWidth placeholder="Marca de Disco" label="Marca" defaultValue={product?.combo_data?.storage?.brand} />
+            <TextField disabled={!validate} required={validate}  id="storage_model" fullWidth placeholder="Modelo de Disco" label="Modelo" defaultValue={product?.combo_data?.storage?.model} />
             <div>
                 <InputLabel>Interfaz</InputLabel>
-                <Select id="storage_interface" name="storage_interface" fullWidth value={storageInterface} onChange={e => setStorageInterface(e.target.value)}>
+                <Select disabled={!validate} required={validate}  id="storage_interface" name="storage_interface" fullWidth value={storageInterface} onChange={e => setStorageInterface(e.target.value)}>
                     <MenuItem sx={{ fontSize: 14 }} value={"SSD SATA"}>SSD SATA</MenuItem>
                     <MenuItem sx={{ fontSize: 14 }} value={"M2 NVMe"}>M2 NVME</MenuItem>
                 </Select>
             </div>
-
             <div>
                 <InputLabel>Capacidad</InputLabel>
-                <Select id="storage_capacity" name="storage_capacity" fullWidth value={storageCapacity} onChange={e => setStorageCapacity(e.target.value)}>
+                <Select disabled={!validate} required={validate}  id="storage_capacity" name="storage_capacity" fullWidth value={storageCapacity} onChange={e => setStorageCapacity(e.target.value)}>
                     <MenuItem sx={{ fontSize: 14 }} value={"120 GB"}>120 GB</MenuItem>
                     <MenuItem sx={{ fontSize: 14 }} value={"240 GB"}>240 GB</MenuItem>
                     <MenuItem sx={{ fontSize: 14 }} value={"256 GB"}>256 GB</MenuItem>
@@ -41,8 +40,7 @@ export const StorageInputs = ({ product }) => {
                     <MenuItem sx={{ fontSize: 14 }} value={"1TB"}>1TB</MenuItem>
                 </Select>
             </div>
-
-            <TextField id="storage_speed" name="storage_speed" fullWidth placeholder="Velocidad en MB/ps" label="Velocidad" defaultValue={product?.combo_data?.storage?.speed} />
+            <TextField disabled={!validate} required={validate}  id="storage_speed" name="storage_speed" fullWidth placeholder="Velocidad en MB/ps" label="Velocidad" defaultValue={product?.combo_data?.storage?.speed} />
         </Box>
     )
 }

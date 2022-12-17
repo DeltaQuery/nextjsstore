@@ -59,7 +59,7 @@ export default function ProductsTable({children}) {
 
     useEffect(() => {
         if (products_arr) {
-            const filteredProducts = products_arr.filter(product => product.name.includes(searchValue))
+            const filteredProducts = products_arr.filter(product => product.name.toLowerCase().includes(searchValue.toLowerCase()))
             setFiltered_arr(filteredProducts)
         }
     }, [searchValue])
@@ -180,7 +180,9 @@ function getCategory(category) {
 const handleValue = (format, value, column, index) => {
     if (column.id === "image") {
         if (typeof value === "string" && value.includes("http")) {
-            return <img key={index} src={value} alt="Img" height="45px"></img>
+            return <div style={{  maxWidth: "55px"}}>
+                <img key={index} style={{ width: "100%", objectFit: "contain" }} src={value} alt="Img" height="45px"></img>
+                </div>
         } else {
             return value
         }

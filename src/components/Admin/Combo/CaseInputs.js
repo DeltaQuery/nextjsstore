@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Select, TextField, Typography, MenuItem, Box, InputLabel } from '@mui/material'
 
-export const CaseInputs = ({ product }) => {
+export const CaseInputs = ({ product, validate }) => {
     const [caseSize, setCaseSize] = useState("")
     const [caseMaterial, setCaseMaterial] = useState("")
 
@@ -19,18 +19,18 @@ export const CaseInputs = ({ product }) => {
             gap: 1.5
         }}>
             <Typography component="h4" variant="h5">Datos Técnicos del Case</Typography>
-            <TextField id="case_brand" fullWidth placeholder="Marca de Case" label="Marca" defaultValue={product?.combo_data?.case?.brand} />
-            <TextField id="case_model" fullWidth placeholder="Modelo de Case" label="Modelo" defaultValue={product?.combo_data?.case?.model} />
+            <TextField disabled={!validate} required={validate} id="case_brand" fullWidth placeholder="Marca de Case" label="Marca" defaultValue={product?.combo_data?.case?.brand} />
+            <TextField  disabled={!validate} required={validate} id="case_model" fullWidth placeholder="Modelo de Case" label="Modelo" defaultValue={product?.combo_data?.case?.model} />
             <div>
                 <InputLabel>Tamaño de Case</InputLabel>
-                <Select id="case_size" name="case_size" fullWidth value={caseSize} onChange={e => setCaseSize(e.target.value)}>
+                <Select  disabled={!validate} required={validate} id="case_size" name="case_size" fullWidth value={caseSize} onChange={e => setCaseSize(e.target.value)}>
                     <MenuItem sx={{ fontSize: 14 }} value={"Mid Tower"}>Mid Tower</MenuItem>
                     <MenuItem sx={{ fontSize: 14 }} value={"Full Tower"}>Full Tower</MenuItem>
                 </Select>
             </div>
             <div>
                 <InputLabel>Material de Case</InputLabel>
-                <Select id="case_material" name="case_material" fullWidth value={caseMaterial} onChange={e => setCaseMaterial(e.target.value)}>
+                <Select  disabled={!validate} required={validate} id="case_material" name="case_material" fullWidth value={caseMaterial} onChange={e => setCaseMaterial(e.target.value)}>
                     <MenuItem sx={{ fontSize: 14 }} value={"Acrílico"}>Acrílico</MenuItem>
                     <MenuItem sx={{ fontSize: 14 }} value={"Vidrio templado"}>Vidrio templdo</MenuItem>
                     <MenuItem sx={{ fontSize: 14 }} value={"No aplica"}>No aplica</MenuItem>

@@ -21,7 +21,7 @@ export const PQuantity = ({ display, product}) => {
 
     return (
         <>
-            {display === "cart" && product
+            {display.includes("cart") && product
                 ?
                 <AlterQuantity
                     className={display}>

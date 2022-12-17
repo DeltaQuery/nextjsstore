@@ -6,7 +6,7 @@ export const PTitle = ({display, name, id}) => {
   return (
     <>
     {
-      display === "detailed"
+      (display.includes("detailed") || display.includes("combo_list"))
       ?
       <TitleDiv className={display}>{name}</TitleDiv>
       :

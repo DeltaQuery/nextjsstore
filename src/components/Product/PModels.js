@@ -11,7 +11,7 @@ export const PModels = ({ display, product, products }) => {
     }
 
     useEffect(() => {
-        if(display === "detailed" && products){
+        if(display.includes("detailed") && products){
             let modelsArr = []
             if (models.variants) {
                 if(models.variants.length > 0){
@@ -32,7 +32,7 @@ export const PModels = ({ display, product, products }) => {
     return (
         <>
             {
-                (display === "detailed" && pModels && pModels.length > 1) &&
+                (display.includes("detailed") && pModels && pModels.length > 1) &&
                 <>
                     <ModelsDiv className={display}>
                         <button

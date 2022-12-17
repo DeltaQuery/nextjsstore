@@ -7,12 +7,19 @@ export const PImage = ({ images, id, display }) => {
   return (
     <ProductImg className={display}>
       {images[0]?.smallImg && <>
-        {display === "group" ?
+        {(display.includes("group") && !display.includes("combo_list")) ?
           <Link href={`/details/${id}`} className="ImgContainer">
             <img src={images[0]?.smallImg} width="90%" className="ProductImg" alt={id} />
           </Link>
           :
-          <img className="ProductImg" src={images[0]?.smallImg} width="90%" />
+          <>
+            {(display.includes("combo_list")) ?
+            <div className="ImgContainer">
+              <img className="ProductImg" src={images[0]?.smallImg} width="90%" />
+            </div>
+              :
+              <img className="ProductImg" src={images[0]?.smallImg} width="90%" />
+            }</>
         }
       </>
       }

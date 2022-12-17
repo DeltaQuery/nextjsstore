@@ -76,10 +76,5 @@ max-width: 225px;
     &.detailed {
         flex-direction: column;
     }
-  
-    &.cart,
-    &.sidebar,
-    &.group {
-    }
   }
 `;
