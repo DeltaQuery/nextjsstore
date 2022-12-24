@@ -9,6 +9,7 @@ import { Main } from 'styles/View/ViewStyles'
 import { Layout } from 'layout/Layout/Layout'
 import { API } from 'services/API'
 import { SectionMore } from 'components/Section/SectionMore'
+import { Whatsapp } from 'components/Whatsapp'
 
 const Nothing = () => {
   return <span></span>
@@ -111,36 +112,7 @@ Search.getLayout = function getLayout(page) {
   return (
     <Layout>
       {page}
+      <Whatsapp/>
     </Layout>
   )
 }
-
-
-
-
-let uniqueVariants = [
-  { id: 1 },
-  { id: 2 },
-  { id: 4 }
-]
-
-let deletedVariants = [
-  { id: 2 },
-  { id: 3 }
-]
-
-let arryy = []
-for (let i = 0; i < uniqueVariants.length; i++) {
-
-  /*for(let z = 0; z < deletedVariants.length; z++){
-    if(uniqueVariants[i].id === deletedVariants[z].id){
-      arryy.push(uniqueVariants[i])
-    }
-  }*/
-}
-
-
-const a1 = [ { id: 1 }, { id: 2 }, { id: 3 } ]
-const a2 = [ { id: 1 }, { id: 2 } ]
-
-const result = a1.filter(({id}) => !a2.some(x => x.id == id))

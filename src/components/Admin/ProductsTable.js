@@ -190,6 +190,14 @@ const handleValue = (format, value, column, index) => {
     if (format && typeof value === "number") {
         return format(value)
     } else {
-        return value
+        if (column.id === "price" || column.id === "discountedPrice") {
+            if(value !== null && value !== undefined){
+                return `$${value}`
+            } else {
+                return value
+            }
+        } else {
+            return value
+        }
     }
 }

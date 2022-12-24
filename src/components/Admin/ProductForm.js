@@ -325,13 +325,22 @@ export const ProductForm = ({ products, newProductForm = true, product }) => {
                         <Select id="associatedProducts" disabled={!modelType ? true : false} multiple fullWidth value={associated}
                             onChange={(e) => setAssociated(e.target.value)}
                         >
-                            {products && products.filter(product => product.models?.type === modelType).map((product) => (
+                            {(products && !product) && products.filter(product => product.models?.type === modelType).map((product) => (
                                 <MenuItem
                                     key={product._id}
                                     value={product._id}
                                     sx={{ fontSize: fontSize }}
                                 >
                                     {product.name}
+                                </MenuItem>
+                            ))}
+                            {(products && product) && products.filter(prod => prod.models?.type === modelType && prod._id !== product._id).map((produ) => (
+                                <MenuItem
+                                    key={produ._id}
+                                    value={produ._id}
+                                    sx={{ fontSize: fontSize }}
+                                >
+                                    {produ.name}
                                 </MenuItem>
                             ))}
                         </Select>

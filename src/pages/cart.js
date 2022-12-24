@@ -11,6 +11,7 @@ import { useSelector } from 'react-redux'
 import roundNumber from 'utils/roundNumber'
 import { Separator } from 'styles/Separator'
 import { Layout } from 'layout/Layout/Layout'
+import { Whatsapp } from 'components/Whatsapp'
 
 const Cart = () => {
   const total = useSelector(state => state.data.total)
@@ -77,6 +78,7 @@ Cart.getLayout = function getLayout(page) {
     return (
       <Layout>
         {page}
+        <Whatsapp/>
       </Layout>
     )
   }

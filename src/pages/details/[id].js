@@ -11,6 +11,7 @@ import { SectionTitle } from 'components/Section/SectionTitle'
 import { SliderList } from 'components/SliderList'
 import { Layout } from 'layout/Layout/Layout'
 import { API } from 'services/API'
+import { Whatsapp } from 'components/Whatsapp'
 
 export async function getStaticPaths() {
   try {
@@ -112,6 +113,7 @@ Details.getLayout = function getLayout(page) {
     return (
       <Layout>
         {page}
+        <Whatsapp/>
       </Layout>
     )
   }

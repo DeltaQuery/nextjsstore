@@ -9,6 +9,7 @@ import roundNumber from 'utils/roundNumber'
 import { ContactForm } from 'styles/Contact/Contact'
 import { Layout } from 'layout/Layout/Layout'
 import { CartTotal } from 'components/Section/CartTotal'
+import { Whatsapp } from 'components/Whatsapp'
 
 const Contact = () => {
   const cart = useSelector(state => state.data.cart)
@@ -149,6 +150,7 @@ Contact.getLayout = function getLayout(page) {
     return (
       <Layout>
         {page}
+        <Whatsapp/>
       </Layout>
     )
   }

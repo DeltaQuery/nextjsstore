@@ -1,12 +1,20 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit"
-//import { useProducts } from "../services/useProducts"
-//import { useFindProduct } from "../services/useFindProduct"
+import { createSlice } from "@reduxjs/toolkit"
 
 const LocalStorageName = "NextJsStoreDQ"
 
 const initialState = {
     localCart: typeof window !== "undefined" ? localStorage.getItem(LocalStorageName) || [] : undefined,
     cart: [],
+    combo: {
+        gamingCase: undefined,
+        cooler: undefined,
+        graphic: undefined,
+        mobo: undefined,
+        power: undefined,
+        processor: undefined,
+        ram: undefined,
+        storage: undefined
+      },
     total: [0, 0, 0],
     addedToCart: null,
     addedProduct: null,
@@ -20,7 +28,7 @@ const initialState = {
 const setTotal = (cart) => {
     const initialValue = 0
     const subtotal = cart.reduce((accumulator, product) => accumulator + product.price * product.quantity, initialValue)
-    const total = cart.reduce((accumulator, product) => product.discountedPrice === null ? accumulator + product.price * product.quantity : accumulator + product.discountedPrice * product.quantity, initialValue)
+    const total = cart.reduce((accumulator, product) => product.discountedPrice === null || product.discountedPrice === undefined ? accumulator + product.price * product.quantity : accumulator + product.discountedPrice * product.quantity, initialValue)
     const saves = subtotal - total
     return [total, subtotal, saves]
 }
@@ -82,6 +90,9 @@ export const dataSlice = createSlice({
         setCart: (state, action) => {
             state.cart = action.payload
         },
+        setCombo: (state, action) => {
+            state.combo = action.payload
+        },
         removeFromCart: (state, action) => {
             let newCart = state.cart
             const index = newCart.findIndex(product => product._id === action.payload)
@@ -115,22 +126,13 @@ export const dataSlice = createSlice({
             state.auth = action.payload
         }
     },
-    // Special reducer for hydrating the state. Special case for next-redux-wrapper
-    /*extraReducers: {
-        [HYDRATE]: (state, action) => {
-            return {
-                ...state,
-                ...action.payload.data,
-            };
-        },
-    },*/
-
 })
 
 export const { addToCart,
     setQuantity,
     updateProductQuantity,
     setCart,
+    setCombo,
     removeFromCart,
     setProducts,
     setProduct,

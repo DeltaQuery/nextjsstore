@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { Product } from 'components/Product/Product'
 import styles from "styles/Combo/Tabs.module.css"
 import { ComboProducts } from 'styles/Combo/ComboStyles'
+import { useSelector } from 'react-redux'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props
@@ -41,9 +42,17 @@ function a11yProps(index) {
     }
 }
 
-export const TabsCombo = ({ categories, products, tabValue, setTabValue, setChosenProduct, setDrawer, drawer }) => {
+export const TabsCombo = ({ categories, products, tabValue, setTabValue, setChosenProduct, setDrawer, drawer, setDrawerType }) => {
+    const components = useSelector(state => state.data.combo)
+
     const openDrawer = (product) => {
         setChosenProduct(product)
+        const matchedComponent = Object.entries(components).filter(comp => comp[1]?._id === product?._id)
+        if(matchedComponent.length > 0){
+            setDrawerType("remove")  
+        } else {
+          setDrawerType("add")  
+        }
         if (window.innerWidth > 600) {
             setDrawer({ ...drawer, left: true })
           } else {
@@ -66,7 +75,7 @@ export const TabsCombo = ({ categories, products, tabValue, setTabValue, setChos
                 aria-label="scrollable auto tabs example">
                 {categories.map((category, index) => (
                     <Tab sx={{ width: "88px", marginLeft: "0px", fontSize: 10 }}
-                        icon={<Image height={34} width={34} alt={category.category} src={category.image.src} />}
+                        icon={<Image height={34} width={34} alt={category.category} src={category.image.src} style={{ objectFit: "contain"}}/>}
                         label={category.category}
                         key={category.categoryId}
                         {...a11yProps(index)}

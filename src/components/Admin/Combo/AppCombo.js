@@ -8,16 +8,7 @@ import { ResultCombo } from './ResultCombo'
 export default function AppCombo({ categories, products }) {
   const [tabValue, setTabValue] = useState(0)
   const [chosenProduct, setChosenProduct] = useState()
-  const [components, setComponents] = useState({
-    gamingCase: undefined,
-    cooler: undefined,
-    graphic: undefined,
-    mobo: undefined,
-    power: undefined,
-    processor: undefined,
-    ram: undefined,
-    storage: undefined
-  })
+  const [drawerType, setDrawerType] = useState()
 
   const [drawer, setDrawer] = useState({
     bottom: false,
@@ -46,12 +37,11 @@ export default function AppCombo({ categories, products }) {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider', margin: "auto", maxWidth: "760px" }}>
         <ResultCombo
-          components={components}
-          setComponents={setComponents}
           setChosenProduct={setChosenProduct}
-          chosenProduct={chosenProduct}
           drawer={drawer}
           setDrawer={setDrawer}
+          drawerType={drawerType}
+          setDrawerType={setDrawerType}
         />
         <Divider sx={{ mt: 1, mb: 1 }} />
         <TabsCombo
@@ -62,9 +52,16 @@ export default function AppCombo({ categories, products }) {
           categories={categories}
           products={products}
           tabValue={tabValue}
-          setTabValue={setTabValue} />
+          setTabValue={setTabValue}
+          setDrawerType={setDrawerType} />
       </Box>
-      <DrawerProduct product={chosenProduct} state={drawer} setDrawer={setDrawer} toggleDrawer={toggleDrawer} components={components} setComponents={setComponents} categories={categories} />
+      <DrawerProduct
+        product={chosenProduct}
+        state={drawer}
+        setDrawer={setDrawer}
+        toggleDrawer={toggleDrawer}
+        categories={categories}
+        drawerType={drawerType} />
     </Box>
   )
 }

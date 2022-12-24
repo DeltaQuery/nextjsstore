@@ -6,7 +6,7 @@ import { BiPurchaseTagAlt } from "react-icons/bi"
 import { BiCategory } from "react-icons/bi"
 import { BiChevronRight } from "react-icons/bi"
 import { categoriesArr } from 'database/categoriesArr'
-import { useSelector } from 'react-redux'
+import { AiOutlineBuild } from "react-icons/ai"
 
 export const Sidebar = () => {
     const { sidebar, setStart, setEnd, checkSwipeToClose } = useSwiper() 
@@ -39,6 +39,17 @@ export const Sidebar = () => {
                         onClick={() => closeSidebar()}
                     >X</div>*/}
                 </div>
+
+                <div className="SidebarContent">
+                <Link href={`/pc_builder`} className="CategoryTitle RedirectLink">
+                        <AiOutlineBuild
+                            className=""
+                            size="20"
+                            fill="#003A4E"
+                        />
+                        PC Builder
+                    </Link>
+                    </div>
 
                 <div className="SidebarContent">
                     <div className="CategoryTitle">

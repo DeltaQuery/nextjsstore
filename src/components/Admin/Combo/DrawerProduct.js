@@ -5,44 +5,83 @@ import { Divider } from '@mui/material'
 import { ComboProduct } from 'styles/Combo/ComboStyles'
 import { PTitle } from 'components/Product/PTitle'
 import { PPrice } from 'components/Product/PPrice'
-import { Features } from 'components/Product/Features'
 import { BiX } from 'react-icons/bi'
 import { AddToCart } from 'components/Product/AddToCart'
+import { useSelector, useDispatch } from 'react-redux'
+import { setCombo } from 'slices/dataSlice'
 
-export default function DrawerProduct({ product, state, drawer, setDrawer, toggleDrawer, components, setComponents }) {
-
+export default function DrawerProduct({ product, state, setDrawer, toggleDrawer, drawerType = "add" }) {
+  const components = useSelector(state => state.data.combo)
+  const dispatch = useDispatch()
   const [productData, setProductData] = useState()
 
   const getProductData = () => {
     const productKey = Object.keys(product.combo_data)
     const productKeys = Object.entries(product.combo_data[productKey])
-    setProductData(productKeys)
+
+    const newProductKeys = productKeys.map(key => {
+      return [ key[0] = key[0].charAt(0).toUpperCase() + key[0].slice(1),
+      key[1] = key[1] ]
+    })
+    setProductData(newProductKeys)
   }
 
   const addToCombo = (product) => {
     if (product.category.includes(5)) {
-      setComponents({ ...components, processor: product})
+      dispatch(setCombo({ ...components, processor: product}))
     }
     if (product.category.includes(6)) {
-      setComponents({ ...components, mobo: product})
+      dispatch(setCombo({ ...components, mobo: product}))
     }
     if (product.category.includes(7)) {
-      setComponents({ ...components, ram: product})
+      dispatch(setCombo({ ...components, ram: product}))
     }
     if (product.category.includes(4) || product.category.includes(8)) {
-      setComponents({ ...components, storage: product})
+      dispatch(setCombo({ ...components, storage: product}))
     }
     if (product.category.includes(13)) {
-      setComponents({ ...components, gamingCase: product})
+      dispatch(setCombo({ ...components, gamingCase: product}))
     }
     if (product.category.includes(12)) {
-      setComponents({ ...components, cooler: product})
+      dispatch(setCombo({ ...components, cooler: product}))
     }
     if (product.category.includes(14)) {
-      setComponents({ ...components, graphic: product})
+      dispatch(setCombo({ ...components, graphic: product}))
     }
     if (product.category.includes(3)) {
-      setComponents({ ...components, power: product})
+      dispatch(setCombo({ ...components, power: product}))
+    }
+    if (window.innerWidth > 600) {
+      setDrawer({ ...state, left: false })
+    } else {
+      setDrawer({ ...state, bottom: false })
+    }
+  }
+
+  const removeFromCombo = (product) => {
+    if (product.category.includes(5)) {
+      dispatch(setCombo({ ...components, processor: undefined}))
+    }
+    if (product.category.includes(6)) {
+      dispatch(setCombo({ ...components, mobo: undefined}))
+    }
+    if (product.category.includes(7)) {
+      dispatch(setCombo({ ...components, ram: undefined}))
+    }
+    if (product.category.includes(4) || product.category.includes(8)) {
+      dispatch(setCombo({ ...components, storage: undefined}))
+    }
+    if (product.category.includes(13)) {
+      dispatch(setCombo({ ...components, gamingCase: undefined}))
+    }
+    if (product.category.includes(12)) {
+      dispatch(setCombo({ ...components, cooler: undefined}))
+    }
+    if (product.category.includes(14)) {
+      dispatch(setCombo({ ...components, graphic: undefined}))
+    }
+    if (product.category.includes(3)) {
+      dispatch(setCombo({ ...components, power: undefined}))
     }
     if (window.innerWidth > 600) {
       setDrawer({ ...state, left: false })
@@ -82,8 +121,11 @@ export default function DrawerProduct({ product, state, drawer, setDrawer, toggl
             })}
           </ul>
           <Divider />
-          <AddToCart display="detailed" text="Agregar a Combo" redirectFunction={() => addToCombo(product)} />
-
+          <div className="ComboButtonContainer">
+            <AddToCart display="detailed"
+          text={drawerType === "add" ? "Agregar a Combo" : "Remover de Combo"}
+          redirectFunction={() => drawerType === "add" ? addToCombo(product) : removeFromCombo(product)} />
+          </div>
         </ComboProduct>
 
       </Box>
