@@ -107,7 +107,7 @@ export const ComboResult = styled.div`
   }
 
   .ComboResult--Container_Details {
-    z-index: -1;
+    z-index: 0;
     overflow: scroll;
   }
 

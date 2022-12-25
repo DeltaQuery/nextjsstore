@@ -17,7 +17,10 @@ import deal3 from "assets/banners/deal3.png"
 import deal4 from "assets/banners/deal4.jpg"
 import deal5 from "assets/banners/deal5.jpg"
 import deal6 from "assets/banners/deal6.jpg"
+import ps5 from "assets/banners/ps5-Ragnarog-post.jpg"
+import airpods from "assets/banners/Airpods-post.jpg"
 import AdminAlert from 'components/AdminAlert'
+import PCBuilderAlert from 'components/PCBuilderAlert'
 import "swiper/css/bundle"
 import { Whatsapp } from 'components/Whatsapp'
 
@@ -36,13 +39,15 @@ export async function getStaticProps() {
 }
 
 export default function Home({ data }) {
-  const [open, setOpen] = useState(true)
+  const [openA, setOpenA] = useState(true)
+  const [openP, setOpenP] = useState(true)
   
   return (
     <>
       <HeroBanner />
       <Main>
-        { open && <AdminAlert open={open} setOpen={setOpen}/> }
+        { openA && <AdminAlert open={openA} setOpen={setOpenA}/> }
+        { openP && <PCBuilderAlert open={openP} setOpen={setOpenP}/> }
         <Section
           text="¡Ofertas on fire! ⏰"
           category={50}
@@ -70,9 +75,9 @@ export default function Home({ data }) {
         </Section>
 
         <Promo
-          img1={deal1}
+          img1={ps5}
           img2={deal2}
-          img3={deal3}
+          img3={airpods}
         />
 
         <Section

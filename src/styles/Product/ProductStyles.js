@@ -74,6 +74,24 @@ export const ProductDiv = styled.div`
   &.combo_list {
     max-width: 160px;
   }
+
+  &.disabled_product {
+    opacity: 0.6;
+    filter: grayscale(1);
+  }
+
+  &.disabled_product::before {
+    content: "Incompatible";
+    position: absolute;
+    top: 43%;
+    left: 0;
+    z-index: 1;
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
   
   @media (min-width: 600px) {
     width: 100%;
